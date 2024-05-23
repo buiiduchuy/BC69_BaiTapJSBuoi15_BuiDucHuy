@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <style>
+    .ket-noi {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+    .ket-noi.show {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+  <div class="container py-5">
+    <h2>Bài tập 1</h2>
+    <h3 class="mb-5">Quản lý sinh viên</h3>
+    <div class="row mb-4">
+      <div class="col-4">
+        <div class="table-responsive text-center">
+          <table class="table table-danger table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" colspan="3">Khu vực</th>
+                <th scope="col" colspan="3">Đối tượng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr class="">
+                <td>2</td>
+                <td>1</td>
+                <td>0.5</td>
+                <td>2.5</td>
+                <td>1.5</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="table-responsive text-center">
+          <table class="table table-danger table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Khu vực</th>
+                <th scope="col">Đối tượng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td>X</td>
+                <td>0</td>
+              </tr>
+              <tr class="">
+                <td>Không ưu tiên</td>
+                <td>Không ưu tiên</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-6">
+      <div class="col">
+        <div class=" mb-3">
+          <label for="" class="form-label">Điểm chuẩn</label>
+          <input type="number" class="form-control" name="" id="diemChuan" placeholder="Nhập điểm chuẩn..." />
+        </div>
+      </div>
+      <div class="col">
+        <div class=" mb-3">
+          <label for="" class="form-label">Điểm 1</label>
+          <input type="number" class="form-control" name="" id="diem1" placeholder="Nhập điểm..." />
+        </div>
+      </div>
+      <div class="col">
+        <div class=" mb-3">
+          <label for="" class="form-label">Điểm 2</label>
+          <input type="number" class="form-control" name="" id="diem2" placeholder="Nhập điểm..." />
+        </div>
+      </div>
+      <div class="col">
+        <div class=" mb-3">
+          <label for="" class="form-label">Điểm 3</label>
+          <input type="number" class="form-control" name="" id="diem3" placeholder="Nhập điểm..." />
+        </div>
+      </div>
+      <div class="col">
+        <div class=" mb-3">
+          <label for="" class="form-label">Khu vực ưu tiên</label>
+          <input type="text" class="form-control" name="" id="khuVuc" placeholder="Nhập khu vực..." />
+        </div>
+      </div>
+      <div class="col">
+        <div class=" mb-3">
+          <label for="" class="form-label">Đối tượng ưu tiên</label>
+          <input type="text" class="form-control" name="" id="doiTuong" placeholder="Nhập đối tượng..." />
+        </div>
+      </div>
+      <div class="mt-2">
+        <button class="btn btn-dark" id="tinhKQ">Tính kết quả</button>
+      </div>
+    </div>
+    <div class="ketQuaBai1 mt-4"></div>
+  </div>
+  <hr>
+
+  <div class="container p-5">
+    <h2>Bài tập 2</h2>
+    <h3 class="mb-5">Tính tiền điện</h3>
+    <div class="mb-4">
+      <strong>50kw đầu : 500d/kw , 50kw kế : 650d/kw , 100kw Kế : 850d/kw , 150kw kế : 1100d/kw Còn lại :
+        1300d/kw</strong>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="" class="form-label">Tên người sử dụng</label>
+          <input type="text" class="form-control" name="" id="name" placeholder="Nhập tên ..." />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="" class="form-label">Số Kw điện sử dụng</label>
+          <input type="number" class="form-control" name="" id="soKw" placeholder="Nhập số kw ..." />
+        </div>
+      </div>
+      <div class="col mt-2">
+        <button class="btn btn-dark" id="tinhTienDien">Tính tiền điện</button>
+      </div>
+    </div>
+    <div class="ketQuaBai2 mt-4"></div>
+  </div>
+  <hr>
+
+  <div class="container p-5">
+    <h2>Bài tập 3</h2>
+    <h3 class="mb-5">Tính thuế thu nhập cá nhân</h3>
+    <div class="row">
+      <div class="col-4">
+        <div class="table-responsive">
+          <table class="table table-danger">
+            <thead>
+              <tr>
+                <th scope="col">Thu nhập chịu thuế(triệu)</th>
+                <th scope="col">Thuế suất (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td>Đến 60</td>
+                <td>5</td>
+              </tr>
+              <tr class="">
+                <td>Trên 60 đến 120</td>
+                <td>10</td>
+              </tr>
+              <tr class="">
+                <td>Trên 120 đến 210</td>
+                <td>15</td>
+              </tr>
+              <tr class="">
+                <td>Trên 210 đến 384</td>
+                <td>20</td>
+              </tr>
+              <tr class="">
+                <td>Trên 384 đến 624</td>
+                <td>25</td>
+              </tr>
+              <tr class="">
+                <td>Trên 624 đến 960</td>
+                <td>30</td>
+              </tr>
+              <tr class="">
+                <td>Trên 960</td>
+                <td>35</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="" class="form-label">Họ tên</label>
+          <input type="text" class="form-control" name="" id="hoTen" placeholder="Nhập họ tên ..." />
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="" class="form-label">Tổng thu nhập/năm (đơn vị triệu)</label>
+          <input type="number" class="form-control" name="" id="tongThuNhap" placeholder="Nhập thu nhập ..." />
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="" class="form-label">Số người phụ thuộc</label>
+          <input type="number" class="form-control" name="" id="nguoiPhuThuoc" placeholder="Nhập thu nhập ..." />
+        </div>
+      </div>
+      <div class="col mt-2">
+        <button class="btn btn-dark" id="tinhThue">Tính thuế TNCN</button>
+      </div>
+    </div>
+    <div class="ketQuaBai3 mt-4"></div>
+  </div>
+  <hr>
+
+  <div class="container p-5">
+    <h2>Bài tập 4</h2>
+    <h3 class="mb-5">Tính tiền cáp</h3>
+    <div class="mb-4">
+      <h6>1. Nhà dân</h6>
+      <ul>
+        <li>Phí xử lý hóa đơn: 4.5$</li>
+        <li>Phí dịch vụ cơ bản: 20.5$</li>
+        <li>Thuê kênh cao cấp: 7.5$ / kênh</li>
+      </ul>
+      <h6>2. Doanh nghiệp</h6>
+      <ul>
+        <li>Phí xử lý hóa đơn: 15$</li>
+        <li>Phí dịch vụ cơ bản: 75$ cho tổng 10 kết nối đầu, mỗi kết nối thêm 5$ / kết nối Thuê kênh cao cấp: 50$ /
+          kênh</li>
+        <li>Thuê kênh cao cấp: 50$ / kênh</li>
+      </ul>
+
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="" class="form-label">Mã khách hàng</label>
+          <input type="text" class="form-control" name="" id="customerID" placeholder="Nhập họ tên ..." />
+        </div>
+      </div>
+      <div class="col-3">
+        <label for="" class="form-label">Loại khách hàng</label>
+        <div class="d-flex">
+          <div class="form-check inputND">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="khachNhaDan" value="nhaDan">
+            <label class="form-check-label" for="khachNhaDan">
+              Nhà dân
+            </label>
+          </div>
+          <div class="form-check ms-3 inputDN">
+            <input class="form-check-input khachDoanhNghiep" type="radio" name="flexRadioDefault" id="khachDoanhNghiep"
+              value="doanhNghiep">
+            <label class="form-check-label" for="khachDoanhNghiep">
+              Doanh nghiệp
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="mb-3">
+          <label for="" class="form-label">Số kênh cao cấp</label>
+          <input type="number" class="form-control" name="" id="soKenhCaoCap" placeholder="Nhập số kênh ..." />
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="mb-3 ket-noi">
+          <label for="" class="form-label">Số kết nối cơ bản</label>
+          <input type="number" class="form-control" name="" id="soKetNoi" placeholder="Nhập số kết nối ..." />
+        </div>
+      </div>
+      <div class="col-12 mt-2">
+        <button class="btn btn-dark" id="tinhTienCap">Tính tiền cáp</button>
+      </div>
+    </div>
+    <div class="ketQuaBai4 mt-4"></div>
+  </div>
+  <hr>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
